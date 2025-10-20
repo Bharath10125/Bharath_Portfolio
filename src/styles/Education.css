@@ -1,0 +1,134 @@
+/* Education Section Styles */
+.education-section {
+  background-color: #0f0f0f;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.education-timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 50px;
+}
+
+.education-timeline::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, #666, #333);
+}
+
+.education-item {
+  position: relative;
+  margin-bottom: 50px;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.education-item::before {
+  content: '';
+  position: absolute;
+  left: -42px;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 3px solid #0f0f0f;
+  box-shadow: 0 0 0 3px #666;
+}
+
+.education-year {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.education-content {
+  background-color: #1a1a1a;
+  padding: 25px;
+  border-radius: 8px;
+  border-left: 3px solid #666;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-content:hover {
+  transform: translateX(5px);
+  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.1);
+}
+
+.education-degree {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.education-college {
+  font-size: 1.2rem;
+  color: #bbb;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.education-department {
+  font-size: 1rem;
+  color: #999;
+  margin-bottom: 5px;
+}
+
+.education-mentor {
+  font-size: 0.95rem;
+  color: #888;
+  font-style: italic;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .education-timeline {
+    padding-left: 30px;
+  }
+
+  .education-timeline::before {
+    left: 10px;
+  }
+
+  .education-item::before {
+    left: -32px;
+    width: 10px;
+    height: 10px;
+  }
+
+  .education-degree {
+    font-size: 1.3rem;
+  }
+
+  .education-college {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .education-content {
+    padding: 20px;
+  }
+
+  .education-degree {
+    font-size: 1.2rem;
+  }
+}

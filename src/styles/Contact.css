@@ -1,0 +1,81 @@
+/* Contact Section Styles */
+.contact-section {
+  background-color: #0a0a0a;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.contact-content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-description {
+  font-size: 1.1rem;
+  color: #bbb;
+  margin-bottom: 40px;
+  line-height: 1.8;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px 30px;
+  background-color: #1a1a1a;
+  border: 1px solid #222;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.contact-link:hover {
+  transform: translateX(5px);
+  background-color: #222;
+  border-color: #444;
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-description {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .contact-link {
+    padding: 18px 25px;
+    font-size: 1rem;
+  }
+
+  .contact-icon {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-link {
+    padding: 15px 20px;
+    font-size: 0.95rem;
+    gap: 12px;
+  }
+
+  .contact-links {
+    gap: 15px;
+  }
+}

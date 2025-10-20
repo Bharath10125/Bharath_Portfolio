@@ -1,0 +1,116 @@
+/* Home Section Styles */
+.home-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+}
+
+.home-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.profile-image-wrapper {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #333;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #1a1a1a;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
+}
+
+.profile-image-wrapper {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.home-content {
+  animation: fadeInUp 1s ease-out;
+}
+
+.home-name {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.home-title {
+  font-size: 1.5rem;
+  color: #aaa;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.home-bio {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ccc;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-name {
+    font-size: 2.2rem;
+  }
+
+  .home-title {
+    font-size: 1.2rem;
+  }
+
+  .home-bio {
+    font-size: 1rem;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-name {
+    font-size: 1.8rem;
+  }
+
+  .home-title {
+    font-size: 1rem;
+  }
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+}
