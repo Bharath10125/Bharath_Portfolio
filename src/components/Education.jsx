@@ -8,21 +8,10 @@ const Education = () => {
         <h2 className="section-title">Education</h2>
         <div className="education-timeline">
           <div className="education-item">
-            <div className="education-year">2020 - 2024</div>
+            <div className="education-year">2022 - 2026</div>
             <div className="education-content">
-              <h3 className="education-degree">Bachelor of Engineering</h3>
-              <h4 className="education-college">XYZ College of Engineering</h4>
-              <p className="education-department">Department of Computer Science & Engineering</p>
-              <p className="education-mentor">Mentor: Dr. John Doe</p>
-            </div>
-          </div>
-          
-          <div className="education-item">
-            <div className="education-year">2018 - 2020</div>
-            <div className="education-content">
-              <h3 className="education-degree">Higher Secondary Education</h3>
-              <h4 className="education-college">ABC Higher Secondary School</h4>
-              <p className="education-department">Science Stream</p>
+              <h3 className="education-degree">BE - Electronics and Instrumentation Engineering</h3>
+              <h4 className="education-college">Kongu Engineering College</h4>
             </div>
           </div>
         </div>
